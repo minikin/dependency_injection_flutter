@@ -8,7 +8,7 @@ import 'package:dependency_injection_flutter/src/services/models/models.dart';
 part 'serializer.g.dart';
 
 @SerializersFor([
-  Event,
+  AnalyticEvent,
   Repo,
 ])
 final Serializers serializers =

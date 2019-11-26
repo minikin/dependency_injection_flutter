@@ -1,21 +1,22 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of event;
+part of analytic_event;
 
 // **************************************************************************
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<Event> _$eventSerializer = new _$EventSerializer();
+Serializer<AnalyticEvent> _$analyticEventSerializer =
+    new _$AnalyticEventSerializer();
 
-class _$EventSerializer implements StructuredSerializer<Event> {
+class _$AnalyticEventSerializer implements StructuredSerializer<AnalyticEvent> {
   @override
-  final Iterable<Type> types = const [Event, _$Event];
+  final Iterable<Type> types = const [AnalyticEvent, _$AnalyticEvent];
   @override
-  final String wireName = 'Event';
+  final String wireName = 'AnalyticEvent';
 
   @override
-  Iterable<Object> serialize(Serializers serializers, Event object,
+  Iterable<Object> serialize(Serializers serializers, AnalyticEvent object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[
       'name',
@@ -30,9 +31,10 @@ class _$EventSerializer implements StructuredSerializer<Event> {
   }
 
   @override
-  Event deserialize(Serializers serializers, Iterable<Object> serialized,
+  AnalyticEvent deserialize(
+      Serializers serializers, Iterable<Object> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new EventBuilder();
+    final result = new AnalyticEventBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -58,35 +60,35 @@ class _$EventSerializer implements StructuredSerializer<Event> {
   }
 }
 
-class _$Event extends Event {
+class _$AnalyticEvent extends AnalyticEvent {
   @override
   final String name;
   @override
   final BuiltMap<String, String> properties;
 
-  factory _$Event([void Function(EventBuilder) updates]) =>
-      (new EventBuilder()..update(updates)).build();
+  factory _$AnalyticEvent([void Function(AnalyticEventBuilder) updates]) =>
+      (new AnalyticEventBuilder()..update(updates)).build();
 
-  _$Event._({this.name, this.properties}) : super._() {
+  _$AnalyticEvent._({this.name, this.properties}) : super._() {
     if (name == null) {
-      throw new BuiltValueNullFieldError('Event', 'name');
+      throw new BuiltValueNullFieldError('AnalyticEvent', 'name');
     }
     if (properties == null) {
-      throw new BuiltValueNullFieldError('Event', 'properties');
+      throw new BuiltValueNullFieldError('AnalyticEvent', 'properties');
     }
   }
 
   @override
-  Event rebuild(void Function(EventBuilder) updates) =>
+  AnalyticEvent rebuild(void Function(AnalyticEventBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  EventBuilder toBuilder() => new EventBuilder()..replace(this);
+  AnalyticEventBuilder toBuilder() => new AnalyticEventBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is Event &&
+    return other is AnalyticEvent &&
         name == other.name &&
         properties == other.properties;
   }
@@ -98,15 +100,16 @@ class _$Event extends Event {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('Event')
+    return (newBuiltValueToStringHelper('AnalyticEvent')
           ..add('name', name)
           ..add('properties', properties))
         .toString();
   }
 }
 
-class EventBuilder implements Builder<Event, EventBuilder> {
-  _$Event _$v;
+class AnalyticEventBuilder
+    implements Builder<AnalyticEvent, AnalyticEventBuilder> {
+  _$AnalyticEvent _$v;
 
   String _name;
   String get name => _$this._name;
@@ -118,9 +121,9 @@ class EventBuilder implements Builder<Event, EventBuilder> {
   set properties(MapBuilder<String, String> properties) =>
       _$this._properties = properties;
 
-  EventBuilder();
+  AnalyticEventBuilder();
 
-  EventBuilder get _$this {
+  AnalyticEventBuilder get _$this {
     if (_$v != null) {
       _name = _$v.name;
       _properties = _$v.properties?.toBuilder();
@@ -130,24 +133,24 @@ class EventBuilder implements Builder<Event, EventBuilder> {
   }
 
   @override
-  void replace(Event other) {
+  void replace(AnalyticEvent other) {
     if (other == null) {
       throw new ArgumentError.notNull('other');
     }
-    _$v = other as _$Event;
+    _$v = other as _$AnalyticEvent;
   }
 
   @override
-  void update(void Function(EventBuilder) updates) {
+  void update(void Function(AnalyticEventBuilder) updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  _$Event build() {
-    _$Event _$result;
+  _$AnalyticEvent build() {
+    _$AnalyticEvent _$result;
     try {
-      _$result =
-          _$v ?? new _$Event._(name: name, properties: properties.build());
+      _$result = _$v ??
+          new _$AnalyticEvent._(name: name, properties: properties.build());
     } catch (_) {
       String _$failedField;
       try {
@@ -155,7 +158,7 @@ class EventBuilder implements Builder<Event, EventBuilder> {
         properties.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'Event', _$failedField, e.toString());
+            'AnalyticEvent', _$failedField, e.toString());
       }
       rethrow;
     }
