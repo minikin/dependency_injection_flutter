@@ -7,7 +7,7 @@ part of serializer;
 // **************************************************************************
 
 Serializers _$serializers = (new Serializers().toBuilder()
-      ..add(Analytics.serializer)
+      ..add(Analytic.serializer)
       ..add(Event.serializer)
       ..add(Github.serializer)
       ..add(Repo.serializer)

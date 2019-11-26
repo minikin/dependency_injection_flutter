@@ -1,21 +1,21 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of analytics;
+part of analytic;
 
 // **************************************************************************
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<Analytics> _$analyticsSerializer = new _$AnalyticsSerializer();
+Serializer<Analytic> _$analyticSerializer = new _$AnalyticSerializer();
 
-class _$AnalyticsSerializer implements StructuredSerializer<Analytics> {
+class _$AnalyticSerializer implements StructuredSerializer<Analytic> {
   @override
-  final Iterable<Type> types = const [Analytics, _$Analytics];
+  final Iterable<Type> types = const [Analytic, _$Analytic];
   @override
-  final String wireName = 'Analytics';
+  final String wireName = 'Analytic';
 
   @override
-  Iterable<Object> serialize(Serializers serializers, Analytics object,
+  Iterable<Object> serialize(Serializers serializers, Analytic object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[
       'event',
@@ -26,9 +26,9 @@ class _$AnalyticsSerializer implements StructuredSerializer<Analytics> {
   }
 
   @override
-  Analytics deserialize(Serializers serializers, Iterable<Object> serialized,
+  Analytic deserialize(Serializers serializers, Iterable<Object> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new AnalyticsBuilder();
+    final result = new AnalyticBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -47,30 +47,30 @@ class _$AnalyticsSerializer implements StructuredSerializer<Analytics> {
   }
 }
 
-class _$Analytics extends Analytics {
+class _$Analytic extends Analytic {
   @override
   final Event event;
 
-  factory _$Analytics([void Function(AnalyticsBuilder) updates]) =>
-      (new AnalyticsBuilder()..update(updates)).build();
+  factory _$Analytic([void Function(AnalyticBuilder) updates]) =>
+      (new AnalyticBuilder()..update(updates)).build();
 
-  _$Analytics._({this.event}) : super._() {
+  _$Analytic._({this.event}) : super._() {
     if (event == null) {
-      throw new BuiltValueNullFieldError('Analytics', 'event');
+      throw new BuiltValueNullFieldError('Analytic', 'event');
     }
   }
 
   @override
-  Analytics rebuild(void Function(AnalyticsBuilder) updates) =>
+  Analytic rebuild(void Function(AnalyticBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  AnalyticsBuilder toBuilder() => new AnalyticsBuilder()..replace(this);
+  AnalyticBuilder toBuilder() => new AnalyticBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is Analytics && event == other.event;
+    return other is Analytic && event == other.event;
   }
 
   @override
@@ -80,21 +80,21 @@ class _$Analytics extends Analytics {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('Analytics')..add('event', event))
+    return (newBuiltValueToStringHelper('Analytic')..add('event', event))
         .toString();
   }
 }
 
-class AnalyticsBuilder implements Builder<Analytics, AnalyticsBuilder> {
-  _$Analytics _$v;
+class AnalyticBuilder implements Builder<Analytic, AnalyticBuilder> {
+  _$Analytic _$v;
 
   EventBuilder _event;
   EventBuilder get event => _$this._event ??= new EventBuilder();
   set event(EventBuilder event) => _$this._event = event;
 
-  AnalyticsBuilder();
+  AnalyticBuilder();
 
-  AnalyticsBuilder get _$this {
+  AnalyticBuilder get _$this {
     if (_$v != null) {
       _event = _$v.event?.toBuilder();
       _$v = null;
@@ -103,23 +103,23 @@ class AnalyticsBuilder implements Builder<Analytics, AnalyticsBuilder> {
   }
 
   @override
-  void replace(Analytics other) {
+  void replace(Analytic other) {
     if (other == null) {
       throw new ArgumentError.notNull('other');
     }
-    _$v = other as _$Analytics;
+    _$v = other as _$Analytic;
   }
 
   @override
-  void update(void Function(AnalyticsBuilder) updates) {
+  void update(void Function(AnalyticBuilder) updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  _$Analytics build() {
-    _$Analytics _$result;
+  _$Analytic build() {
+    _$Analytic _$result;
     try {
-      _$result = _$v ?? new _$Analytics._(event: event.build());
+      _$result = _$v ?? new _$Analytic._(event: event.build());
     } catch (_) {
       String _$failedField;
       try {
@@ -127,7 +127,7 @@ class AnalyticsBuilder implements Builder<Analytics, AnalyticsBuilder> {
         event.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            'Analytics', _$failedField, e.toString());
+            'Analytic', _$failedField, e.toString());
       }
       rethrow;
     }

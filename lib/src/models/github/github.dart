@@ -4,8 +4,7 @@ import 'dart:convert';
 
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
-import 'package:dependency_injection_flutter/src/models/models.dart' show Repo;
-import 'package:dependency_injection_flutter/src/models/serializer/serializer.dart';
+import 'package:dependency_injection_flutter/src/models/models.dart';
 
 part 'github.g.dart';
 
