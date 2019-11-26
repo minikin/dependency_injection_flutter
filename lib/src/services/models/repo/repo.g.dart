@@ -21,12 +21,12 @@ class _$RepoSerializer implements StructuredSerializer<Repo> {
       'archived',
       serializers.serialize(object.archived,
           specifiedType: const FullType(bool)),
-      'htmlUrl',
+      'html_url',
       serializers.serialize(object.htmlUrl,
           specifiedType: const FullType(String)),
       'name',
       serializers.serialize(object.name, specifiedType: const FullType(String)),
-      'pushedAt',
+      'pushed_at',
       serializers.serialize(object.pushedAt,
           specifiedType: const FullType(DateTime)),
     ];
@@ -58,7 +58,7 @@ class _$RepoSerializer implements StructuredSerializer<Repo> {
           result.description = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
           break;
-        case 'htmlUrl':
+        case 'html_url':
           result.htmlUrl = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
           break;
@@ -66,7 +66,7 @@ class _$RepoSerializer implements StructuredSerializer<Repo> {
           result.name = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
           break;
-        case 'pushedAt':
+        case 'pushed_at':
           result.pushedAt = serializers.deserialize(value,
               specifiedType: const FullType(DateTime)) as DateTime;
           break;
