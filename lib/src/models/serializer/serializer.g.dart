@@ -7,6 +7,7 @@ part of serializer;
 // **************************************************************************
 
 Serializers _$serializers = (new Serializers().toBuilder()
+      ..add(Analytics.serializer)
       ..add(Event.serializer)
       ..addBuilderFactory(
           const FullType(
