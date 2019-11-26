@@ -9,6 +9,8 @@ part of serializer;
 Serializers _$serializers = (new Serializers().toBuilder()
       ..add(Analytics.serializer)
       ..add(Event.serializer)
+      ..add(Github.serializer)
+      ..add(Repo.serializer)
       ..addBuilderFactory(
           const FullType(
               BuiltMap, const [const FullType(String), const FullType(String)]),
