@@ -4,15 +4,15 @@ import 'package:built_collection/built_collection.dart';
 import 'package:dependency_injection_flutter/src/services/models/errors/network_error.dart';
 import 'package:dependency_injection_flutter/src/services/models/models.dart';
 import 'package:flutter/foundation.dart';
-import 'package:http/http.dart' as http;
+import 'package:http/http.dart' show Client;
 
 class GitHubClient {
   final _baseUrl = 'https://api.github.com/users';
-  final http.Client client;
+  final Client client;
 
   GitHubClient({
     @required this.client,
-  });
+  }) : assert(client != null);
 
   Future<BuiltList<Repo>> fetchListOfRepos({
     String user,
