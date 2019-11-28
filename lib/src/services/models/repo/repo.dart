@@ -27,7 +27,7 @@ abstract class Repo implements Built<Repo, RepoBuilder> {
   String get name;
 
   @BuiltValueField(wireName: 'pushed_at')
-  DateTime get pushedAt;
+  String get pushedAt;
 
   String toJson() {
     return json.encode(serializers.serializeWith(Repo.serializer, this));
@@ -39,8 +39,7 @@ abstract class Repo implements Built<Repo, RepoBuilder> {
   }
 
   static BuiltList<Repo> parseListOfRepos(String responseBody) {
-    //final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
-    final parsed = json.decode(responseBody);
+    final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
     return deserializeListOf<Repo>(parsed);
   }
 }
