@@ -13,11 +13,20 @@ class RepoItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final repoDescription =
+        (repo.description != null) ? repo.description : 'No description';
+
     return Container(
       child: Card(
         child: ListTile(
-          title: Text(repo.name),
-          subtitle: Text('${repo.description}, Updated: ${repo.pushedAt}'),
+          title: Text(
+            repo.name,
+            style: const TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          subtitle: Text('$repoDescription, Updated: ${repo.pushedAt}'),
           trailing: Icon(Icons.more_vert),
           isThreeLine: true,
         ),
