@@ -28,7 +28,7 @@ class _$RepoSerializer implements StructuredSerializer<Repo> {
       serializers.serialize(object.name, specifiedType: const FullType(String)),
       'pushed_at',
       serializers.serialize(object.pushedAt,
-          specifiedType: const FullType(String)),
+          specifiedType: const FullType(DateTime)),
     ];
     if (object.description != null) {
       result
@@ -68,7 +68,7 @@ class _$RepoSerializer implements StructuredSerializer<Repo> {
           break;
         case 'pushed_at':
           result.pushedAt = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+              specifiedType: const FullType(DateTime)) as DateTime;
           break;
       }
     }
@@ -87,7 +87,7 @@ class _$Repo extends Repo {
   @override
   final String name;
   @override
-  final String pushedAt;
+  final DateTime pushedAt;
 
   factory _$Repo([void Function(RepoBuilder) updates]) =>
       (new RepoBuilder()..update(updates)).build();
@@ -168,9 +168,9 @@ class RepoBuilder implements Builder<Repo, RepoBuilder> {
   String get name => _$this._name;
   set name(String name) => _$this._name = name;
 
-  String _pushedAt;
-  String get pushedAt => _$this._pushedAt;
-  set pushedAt(String pushedAt) => _$this._pushedAt = pushedAt;
+  DateTime _pushedAt;
+  DateTime get pushedAt => _$this._pushedAt;
+  set pushedAt(DateTime pushedAt) => _$this._pushedAt = pushedAt;
 
   RepoBuilder();
 

@@ -27,7 +27,7 @@ abstract class Repo implements Built<Repo, RepoBuilder> {
   String get name;
 
   @BuiltValueField(wireName: 'pushed_at')
-  String get pushedAt;
+  DateTime get pushedAt;
 
   String toJson() {
     return json.encode(serializers.serializeWith(Repo.serializer, this));
