@@ -35,3 +35,7 @@ class GitHubClient {
     }
   }
 }
+
+extension GitHubClientExtensionMock on GitHubClient {
+  static Future<BuiltList<Repo>> mock() {}
+}

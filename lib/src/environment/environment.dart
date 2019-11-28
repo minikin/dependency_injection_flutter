@@ -1,6 +1,8 @@
 library environment;
 
 import 'package:built_value/built_value.dart';
+import 'package:dependency_injection_flutter/src/services/github/github_client.dart';
+import 'package:http/http.dart';
 
 part 'environment.g.dart';
 
@@ -14,6 +16,20 @@ abstract class Environment implements Built<Environment, EnvironmentBuilder> {
       _$Environment;
 
   factory Environment.current() {
-    return Environment((b) => b);
+    return Environment(
+      (b) => b..gitHubClient = GitHubClient(client: Client()),
+    );
   }
+
+  GitHubClient get gitHubClient;
 }
+
+var Current1 = Bllll();
+
+class Bllll {
+  final GitHubClient gitHubClient = GitHubClient(client: Client());
+}
+
+extension EnvironmentMock1 on Bllll {}
+
+extension EnvironmentMock on Environment {}

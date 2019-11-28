@@ -7,10 +7,17 @@ part of environment;
 // **************************************************************************
 
 class _$Environment extends Environment {
+  @override
+  final GitHubClient gitHubClient;
+
   factory _$Environment([void Function(EnvironmentBuilder) updates]) =>
       (new EnvironmentBuilder()..update(updates)).build();
 
-  _$Environment._() : super._();
+  _$Environment._({this.gitHubClient}) : super._() {
+    if (gitHubClient == null) {
+      throw new BuiltValueNullFieldError('Environment', 'gitHubClient');
+    }
+  }
 
   @override
   Environment rebuild(void Function(EnvironmentBuilder) updates) =>
@@ -22,24 +29,39 @@ class _$Environment extends Environment {
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is Environment;
+    return other is Environment && gitHubClient == other.gitHubClient;
   }
 
   @override
   int get hashCode {
-    return 906983632;
+    return $jf($jc(0, gitHubClient.hashCode));
   }
 
   @override
   String toString() {
-    return newBuiltValueToStringHelper('Environment').toString();
+    return (newBuiltValueToStringHelper('Environment')
+          ..add('gitHubClient', gitHubClient))
+        .toString();
   }
 }
 
 class EnvironmentBuilder implements Builder<Environment, EnvironmentBuilder> {
   _$Environment _$v;
 
+  GitHubClient _gitHubClient;
+  GitHubClient get gitHubClient => _$this._gitHubClient;
+  set gitHubClient(GitHubClient gitHubClient) =>
+      _$this._gitHubClient = gitHubClient;
+
   EnvironmentBuilder();
+
+  EnvironmentBuilder get _$this {
+    if (_$v != null) {
+      _gitHubClient = _$v.gitHubClient;
+      _$v = null;
+    }
+    return this;
+  }
 
   @override
   void replace(Environment other) {
@@ -56,7 +78,7 @@ class EnvironmentBuilder implements Builder<Environment, EnvironmentBuilder> {
 
   @override
   _$Environment build() {
-    final _$result = _$v ?? new _$Environment._();
+    final _$result = _$v ?? new _$Environment._(gitHubClient: gitHubClient);
     replace(_$result);
     return _$result;
   }
