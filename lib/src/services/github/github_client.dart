@@ -25,7 +25,9 @@ class GitHubClient {
         HttpHeaders.contentTypeHeader: 'application/json',
       },
     );
+
     print('GitHubClient:fetchListOfRepos: ${response.statusCode}');
+
     if (response.statusCode == 200) {
       return compute(Repo.parseListOfRepos, response.body);
     } else {

@@ -39,8 +39,8 @@ abstract class Repo implements Built<Repo, RepoBuilder> {
   }
 
   static BuiltList<Repo> parseListOfRepos(String responseBody) {
-    final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
-
+    //final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
+    final parsed = json.decode(responseBody);
     return deserializeListOf<Repo>(parsed);
   }
 }
