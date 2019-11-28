@@ -10,8 +10,6 @@ part 'environment.g.dart';
 var Current = Environment.current();
 
 abstract class Environment implements Built<Environment, EnvironmentBuilder> {
-  Environment._();
-
   factory Environment([void Function(EnvironmentBuilder) updates]) =
       _$Environment;
 
@@ -21,15 +19,7 @@ abstract class Environment implements Built<Environment, EnvironmentBuilder> {
     );
   }
 
+  Environment._();
+
   GitHubClient get gitHubClient;
 }
-
-var Current1 = Bllll();
-
-class Bllll {
-  final GitHubClient gitHubClient = GitHubClient(client: Client());
-}
-
-extension EnvironmentMock1 on Bllll {}
-
-extension EnvironmentMock on Environment {}
