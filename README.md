@@ -21,11 +21,11 @@
 ## Contents
 
 - [Contents](#contents)
-- [📋 Requirements](#%f0%9f%93%8b-requirements)
-- [🎉 Run](#%f0%9f%8e%89-run)
-- [🎯 Example](#%f0%9f%8e%af-example)
-- [⛑ FAQ](#%e2%9b%91-faq)
-- [📄 License](#%f0%9f%93%84-license)
+- [📋 Requirements](#-requirements)
+- [🎉 Run](#run)
+- [🎯 Example](#-example)
+- [⛑ FAQ](#-faq)
+- [📄 License](#-license)
 
 ## 📋 Requirements
 
@@ -57,7 +57,3 @@ If you have any questions ping me on twitter: [@minikin](https://twitter.com/min
 
 Project is available under the MIT license.
 See the [LICENSE](https://github.com/minikin/dependency_injection_flutter/blob/master/LICENSE) file for more info.
-
-```
-
-```
