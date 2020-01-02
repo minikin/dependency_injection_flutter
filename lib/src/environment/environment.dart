@@ -19,6 +19,12 @@ abstract class Environment implements Built<Environment, EnvironmentBuilder> {
     );
   }
 
+  factory Environment.mock() {
+    return Environment(
+      (b) => b..gitHubClient = GitHubClientExtension.mock,
+    );
+  }
+
   Environment._();
 
   GitHubClient get gitHubClient;

@@ -11,7 +11,7 @@ class GitHubClient {
   final Client client;
 
   GitHubClient({
-    @required this.client,
+    this.client,
   }) : assert(client != null);
 
   Future<BuiltList<Repo>> fetchListOfRepos({
@@ -36,6 +36,19 @@ class GitHubClient {
   }
 }
 
-// extension GitHubClientExtensionMock on GitHubClient {
-//   static Future<BuiltList<Repo>> mock() {}
-// }
+extension GitHubClientExtension on GitHubClient {
+  // Future<BuiltList<Repo>> get mock async {
+  //   final mockItem = '''{archived: false,
+  //   description: 'Mock Description',
+  //   html_url: 'httt://mock.com',
+  //   name: 'Mock Repo',
+  //   pushed_at: '2019--7-23 14:16:34.000Z'}''';
+  //   final mockList = BuiltList.of([Repo.fromJson(mockItem)]);
+  //   print('mockList $mockList');
+  //   return Future(() => mockList);
+  // }
+
+  static GitHubClient get mock {
+    return GitHubClient(client: Client());
+  }
+}
