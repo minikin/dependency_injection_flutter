@@ -1,5 +1,5 @@
 <h1 align="center">
-  Dependency Injection Made Easy
+  Dependency Injection Made Simple?
 </h1>
 
 <p align="center">
