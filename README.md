@@ -3,15 +3,15 @@
 </h1>
 
 <p align="center">
- WIP
+ <a href="https://github.com/minikin/dependency_injection_flutter"><img src="https://i.ibb.co/cYjxPkF/di-simple.png" alt="di-simple" border="0"></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/minikin/dependency_injection_flutter/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Darty is released under the MIT license." />
   </a>
-  <a href="https://app.bitrise.io/app/1851edf4119f7170">
-    <img src="https://app.bitrise.io/app/1851edf4119f7170/status.svg?token=7gxXnwvmAESiK0oXsL7row&branch=develop" alt="Current Build Status." />
+  <a href="https://codemagic.io/apps/5e68dc0695b1b12cd2a71fef/5e68dc0695b1b12cd2a71fee/latest_build">
+    <img src="https://api.codemagic.io/apps/5e68dc0695b1b12cd2a71fef/5e68dc0695b1b12cd2a71fee/status_badge.svg" alt="Current Build Status." />
   </a>
     <a href="https://github.com/minikin/dependency_injection_flutter/blob/master/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-welcome-blue.svg" alt="PRs welcome!" />
@@ -30,7 +30,7 @@
 ## 📋 Requirements
 
 - Flutter: the latest version on `flutter beta channel`
-- Dart: 2.7.0+
+- Dart: 2.8.0+
 - Xcode: 11.2.0+
 - Androind Studio 3.5.0+
 - Ruby: 2.6.0+
