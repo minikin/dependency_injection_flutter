@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
- WIP
+ <a href="https://ibb.co/WVLsQGy"><img src="https://i.ibb.co/cYjxPkF/di-simple.png" alt="di-simple" border="0"></a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 ## 📋 Requirements
 
 - Flutter: the latest version on `flutter beta channel`
-- Dart: 2.7.0+
+- Dart: 2.8.0+
 - Xcode: 11.2.0+
 - Androind Studio 3.5.0+
 - Ruby: 2.6.0+
