@@ -11,7 +11,7 @@ class GitHubClient {
   final Client client;
 
   GitHubClient({
-    this.client,
+    @required this.client,
   }) : assert(client != null);
 
   Future<BuiltList<Repo>> fetchListOfRepos({
