@@ -3,10 +3,6 @@
 </h1>
 
 <p align="center">
- <a href="https://github.com/minikin/dependency_injection_flutter"><img src="https://i.ibb.co/cYjxPkF/di-simple.png" alt="di-simple" border="0"></a>
-</p>
-
-<p align="center">
   <a href="https://github.com/minikin/dependency_injection_flutter/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Darty is released under the MIT license." />
   </a>
@@ -22,7 +18,7 @@
 
 - [Contents](#contents)
 - [📋 Requirements](#-requirements)
-- [🎉 Run](#run)
+- [🎉 Run](#-run)
 - [🎯 Example](#-example)
 - [⛑ FAQ](#-faq)
 - [📄 License](#-license)
