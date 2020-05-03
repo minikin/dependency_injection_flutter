@@ -6,8 +6,8 @@
   <a href="https://github.com/minikin/dependency_injection_flutter/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Darty is released under the MIT license." />
   </a>
-  <a href="https://codemagic.io/apps/5e68dc0695b1b12cd2a71fef/5e68dc0695b1b12cd2a71fee/latest_build">
-    <img src="https://api.codemagic.io/apps/5e68dc0695b1b12cd2a71fef/5e68dc0695b1b12cd2a71fee/status_badge.svg" alt="Current Build Status." />
+  <a href="https://github.com/minikin/dependency_injection_flutter/actions">
+    <img src="https://github.com/minikin/dependency_injection_flutter/workflows/Flutter%20CLI/badge.svg" alt="Current Build Status." />
   </a>
     <a href="https://github.com/minikin/dependency_injection_flutter/blob/master/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-welcome-blue.svg" alt="PRs welcome!" />
