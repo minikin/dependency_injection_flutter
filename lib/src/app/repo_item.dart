@@ -27,7 +27,7 @@ class RepoItem extends StatelessWidget {
             ),
           ),
           subtitle: Text('$repoDescription\nUpdated: ${repo.pushedAt}'),
-          trailing: Icon(Icons.code),
+          trailing: const Icon(Icons.code),
           isThreeLine: true,
         ),
       ),
